@@ -2,7 +2,7 @@ package code;
 
 public class Engine {// m-dlugosc informacji n-liczba pakietow
 
-    public static MyList<String> partition(String information, int partitionsNumber) throws Exception { // O(n*(n+m)) czy O(n^2)
+    public static MyList<String> partition(String information, int partitionsNumber) throws Exception { // O(n^2)
 
         if (partitionsNumber < 1) throw new Exception("Za mala liczba pakietow!");
         if (information.equals("")) throw new Exception("Nie podano informacji!");
